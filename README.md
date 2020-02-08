@@ -1,2 +1,3 @@
-% Competitive Programming
-# Competitive Programming
+<head>
+Competitive Programming
+</head>
