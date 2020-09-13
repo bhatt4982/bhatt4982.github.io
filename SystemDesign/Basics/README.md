@@ -1,26 +1,26 @@
 # Basics of System Design
-## * System Design - HLD/LLD
-## * Scaling - Horizontal vs Vertical
-## * Capacity Estimation
-## * Load Balancer
-## * Consistent Hashing
-## * Monolith vs Microservices
-## * Distributed Systems
-## * Fault Tolerance - Redundancy and Replication
-## * CAP Theorem
-## * SQL vs NoSQL
-## * Indexing
-## * Data Partition - Sharding
-## * Content Delivery Network (CDN)
-## * Cache
-## * Gateway
-## * RestAPI
-## * Proxy
-## * Long Polling
-## * Web Socket
-## * Server Sent Events
-## * Push Notification
-## * Message Queue - Kafka and RabitMQ
-## * Service Discovery
-## * Configuration Management - Zookeeper
-## * Continuous Integration(CI)/Continuous Deployment(CD)
+## * [System Design - HLD/LLD](hld_lld.md)
+## * [Scaling - Horizontal vs Vertical](scaling.md)
+## * [Capacity Estimation](capacity_estimation.md)
+## * [Load Balancer](lb.md)
+## * [Consistent Hashing](consistent_hashing.md)
+## * [Monolith vs Microservices](compare_mm.md)
+## * [Distributed Systems](ds.md)
+## * [Fault Tolerance - Redundancy and Replication](fault_tolerance.md)
+## * [CAP Theorem](cap.md)
+## * [SQL vs NoSQL](sql_nosql.md)
+## * [Indexing](indexing.md)
+## * [Data Partition - Sharding](sharding.md)
+## * [Content Delivery Network (CDN)](cdn.md)
+## * [Cache - Redis/MemCache](cache.md)
+## * [Gateway](gateway.md)
+## * [RestAPI](restapi.md)
+## * [Proxy](proxy.md)
+## * [Long Polling](long_polling.md)
+## * [Web Socket](websocket.md)
+## * [Server Sent Events](server_sent_events.md)
+## * [Push Notification](push_notification.md)
+## * [Message Queue - Kafka/RabitMQ](mq.md)
+## * [Service Discovery](discovery.md)
+## * [Configuration Management - Zookeeper](configuration.md)
+## * [Continuous Integration(CI)/Continuous Deployment(CD)](ci_cd.md)
