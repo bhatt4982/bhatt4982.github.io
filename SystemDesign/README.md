@@ -1,3 +1,6 @@
-* [Basics of System Design](Basics/README.md)
-* [Generic Problems](Generic/README.md)
-* [HLD](HLD/README.md)
+# System Design
+## * [Basics of System Design](Basics/README.md)
+
+## * [Generic Problems](Generic/README.md)
+
+## * [HLD](HLD/README.md)
