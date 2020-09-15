@@ -1,5 +1,5 @@
 # System Design
-## * [Basics of System Design](Basics/README.md)
+## * [Lego Blocks - Basics of System Design](Basics/README.md)
 
 ## * [Generic Problems](Generic/README.md)
 
