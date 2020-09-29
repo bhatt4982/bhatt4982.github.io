@@ -1,9 +1,12 @@
 # Competitive Programming
+## C++
+### 1. STL
+#### a. [vector](c_plus_plus/vector.md)
 
 ## Google
-### 1. [CodeJam](https://github.com/bhatt4982/bhatt4982.github.io/blob/master/CompetitiveProgramming/Google/CodeJam/README.md)
-### 2. [KickStart](https://github.com/bhatt4982/bhatt4982.github.io/blob/master/CompetitiveProgramming/Google/KickStart/README.md)
+### 1. [CodeJam](Google/CodeJam/README.md)
+### 2. [KickStart](Google/KickStart/README.md)
 
 ## HackerRank
-### 1. [Interview Preparation Kit](https://github.com/bhatt4982/bhatt4982.github.io/blob/master/CompetitiveProgramming/HackerRank/InterviewPreparationKit/README.md)
-### 2. [Problem Solving](https://github.com/bhatt4982/bhatt4982.github.io/blob/master/CompetitiveProgramming/HackerRank/ProblemSolving/README.md)
+### 1. [Interview Preparation Kit](HackerRank/InterviewPreparationKit/README.md)
+### 2. [Problem Solving](HackerRank/ProblemSolving/README.md)
