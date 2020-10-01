@@ -1,56 +1,75 @@
 # Vector
 
+## Container properties
+  * **Sequence** - ordered in a strict linear sequence
+  * **Dynamic array** - direct access to any element
+  * **Allocator-aware** - dynamically handle its storage needs
+
+___
+
 ## Constructor
 ```c++
     // empty container constructor (default constructor)
     vector<int> a;
+    // a - []
+
     // fill constructor
     vector<int> b(4, 100);
+    // b - [100, 100, 100, 100]
+
     // range constructor
     vector<int> c(b.begin(), b.end());
+    // c - [100, 100, 100, 100]
+
     // copy constructor
     vector<int> d(c);
-    // the iterator constructor can also be used to construct from arrays:
-    int arr[] = { 1, 2, 3, 4 };
-    vector<int> r(arr, arr + sizeof(arr) / sizeof(int));
-
-    // operator=
-    std::vector<int> p(5, 0);
-    std::vector<int> q(10, 1);
-    cout << "P Size: " << p.size() << ", Q Capacity: " << q.size() << endl;
+    // d - [100, 100, 100, 100]
+```
+### operator=
+```c++
+    std::vector<int> p(3, 0);
+    // p - [0, 0, 0]
+    std::vector<int> q(5, 1);
+    // q - [1, 1, 1, 1, 1]
     p = q;
-    cout << "After p=q - P Size: " << p.size() << ", Q Capacity: " << q.size() << endl;
+    // p - [1, 1, 1, 1, 1]
+```
 
-    // initialization
+### Initialization
+
+```c++
     vector<int> a{1, 2, 3, 4}; // a - [1, 2, 3, 4]
 
     int raw[] = { 1, 2, 3, 4 };
     vector<int> b(raw, raw + sizeof(raw) / sizeof(int)); // b - [1, 2, 3, 4]
 ```
+___
 
 ## Element access
+* **operator[]** - Returns a reference to the element at specified location pos. No bounds checking is performed.
+* **at** - Returns a reference to the element at specified location pos, with bounds checking.
+* **front** - Returns a reference to the first element in the container. Calling front on an empty container is undefined.
+* **back** - Returns a reference to the last element in the container. Calling back on an empty container causes undefined behavior.
+* **data** - Returns pointer to the underlying array serving as element storage. If size() is 0, data() may or may not return a null pointer.
 ```c++
     vector<int> x{ 1, 2, 3, 4 };
-    // operator[] - Returns a reference to the element at specified location pos. No bounds checking is performed.
     cout << "element [2] - " << x[2] << endl;
-    // at - Returns a reference to the element at specified location pos, with bounds checking.
     cout << "element at 3 - " << x.at(3) << endl;
-    // front - Returns a reference to the first element in the container.
-    // Calling front on an empty container is undefined.
+
     cout << "element at front - " << x.front() << endl;
-    // back - Returns a reference to the last element in the container.
-    // Calling back on an empty container causes undefined behavior.
+
     cout << "element at back - " << x.back() << endl;
-    // data - Returns pointer to the underlying array serving as element storage.
-    // If size() is 0, data() may or may not return a null pointer.
+
     int* pX = x.data();
     cout << "element at 3 - " << pX[3] << endl;
 ```
+___
+
 ## Capacity
+* **size** - number of actual objects held
+* **capacity** - size of the storage space currently allocated
+* **max_size** - maximum potential size(by no means guaranteed)
 ```c++
-    // size - number of actual objects held
-    // capacity - size of the storage space currently allocated
-    // max_size - maximum potential size(by no means guaranteed)
     vector<char> t1;
     cout << "T1" << endl;
     cout << "Size: " << t1.size() << ", Capacity: " << t1.capacity() << ", Max Size: " << t1.max_size() << endl;
@@ -70,8 +89,9 @@
         cout << "Size: " << t3.size() << ", Capacity: " << t3.capacity() << endl;
     }
     cout << endl;
-
-    // resize - Resizes the container so that it contains n elements.
+```
+* **resize** - Resizes the container so that it contains n elements.
+```c++
     vector<int> t4(2);
     cout << "T4" << endl;
     cout << "Initial Size: " << t4.size() << ", Initial Capacity: " << t4.capacity() << endl;
@@ -81,8 +101,9 @@
     t4.resize(10);
     cout << "After resize(10) - Size: " << t4.size() << ", Capacity: " << t4.capacity() << endl;
     cout << endl;
-
-    // reserve - Requests that the vector capacity be at least enough to contain n elements.
+```
+* **reserve** - Requests that the vector capacity be at least enough to contain n elements.
+```
     vector<int> t5(12);
     cout << "T5" << endl;
     cout << "Initial Size: " << t5.size() << ", Initial Capacity: " << t5.capacity() << endl;
@@ -92,8 +113,9 @@
     t5.reserve(10);
     cout << "After reserve(10) - Size: " << t5.size() << ", Capacity: " << t5.capacity() << endl;
     cout << endl;
-
-    // shrink_to_fit - Requests the container to reduce its capacity to fit its size.
+```
+* **shrink_to_fit** - Requests the container to reduce its capacity to fit its size.
+```c++
     vector<int> t6(12);
     t6.reserve(1000);
     cout << "T6" << endl;
@@ -101,14 +123,22 @@
     t6.shrink_to_fit();
     cout << "After shrink_to_fit() - Size: " << t6.size() << ", Capacity: " << t6.capacity() << endl;
     cout << endl;
-
-    // empty - Returns whether the vector is empty (i.e. whether its size is 0).
+```
+* **empty** - Returns whether the vector is empty (i.e. whether its size is 0).
+```c++
     vector<int> t7;
     cout << "T7 empty - " << t7.empty() << endl; \\ 1
     t7.resize(5);
     cout << "T7 empty - " << t7.empty() << endl; \\ 0
 ```
+___
+
 ## Iterators
+  * **begin** - Return iterator to beginning
+  * **end** - Return iterator to end
+  * **cbegin** - Return const_iterator to beginning
+  * **cend** - Return const_iterator to end
+
 ```c++
     vector<int> r{ 1, 2, 3, 4 };
     for (vector<int>::iterator it = r.begin(); it != r.end(); it++)
@@ -135,21 +165,25 @@
     auto it1 = r.cbegin();
     // *it1 += 10; //- compile time error - you cannot assign to a variable that is const
 ```
+___
+
 ## Modifiers
+* **push_back** - Appends the given element value to the end of the container.
+* **pop_back** - Removes the last element of the container.
 ```c++
     vector<int> m; // creates empty array
 
-    // push_back - Appends the given element value to the end of the container.
     m.push_back(1); // m - [1]
     m.push_back(2); // m - [1, 2]
     m.push_back(3); // m - [1, 2, 3]
 
-    // pop_back - Removes the last element of the container.
     m.pop_back(); // m - [1, 2]
     m.pop_back(); // m - [1]
     m.pop_back(); // m - []
-
-    // insert - Inserts elements at the specified location in the container
+```
+* **insert** - Inserts elements at the specified location in the container
+* **erase**
+```c++
     vector<int> n{ 1, 2, 3 }; // n - [1, 2, 3]
     auto it = n.begin();
     n.insert(it, 5); // n - [5, 1, 2, 3]
@@ -179,21 +213,22 @@
     // m - []
     // n - [5, 51, 53]
     // o - [1, 2, 3]
-
-    // swap - Exchanges the contents of the container with those of other. Does not invoke any move, copy, or swap operations on individual elements
+```
+* **swap** - Exchanges the contents of the container with those of other. Does not invoke any move, copy, or swap operations on individual elements
+```c++
     n.swap(o);
     // o - [5, 51, 53]
     // n - [1, 2, 3]
-
-
-    // clear - Erases all elements from the container. After this call, size() returns zero.
+```
+* **clear** - Erases all elements from the container. After this call, size() returns zero.
+```c++
     m.clear(); // m - []
     n.clear(); // n - []
     o.clear(); // o - []
-
-    // emplace - Construct and insert element
-    // The container is extended by inserting a new element at position.
-    // This new element is constructed in place using args as the arguments for its construction.
+```
+* **emplace** - Construct and insert element - The container is extended by inserting a new element at position. This new element is constructed in place using args as the arguments for its construction.
+* **emplace_back**
+```c++
     vector<pair<int, int>> m; // creates empty array
     m.insert(m.begin(), make_pair(1, 2)); // m - [ (1,2) ]
     m.emplace(m.end(), 3, 4); // m - [ (1,2), (3,4) ]
@@ -202,3 +237,4 @@
     m.push_back(make_pair(5, 6)); // m - [ (1,2), (3,4), (5, 6) ]
     m.emplace_back(7, 8); // m - [ (1,2), (3,4), (5, 6), (7,8) ]
 ```
+___
