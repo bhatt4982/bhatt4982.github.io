@@ -6,29 +6,9 @@
 
 ## Container properties
 * **Unordered**
-____
-
-## Constructor
-* Same as map
-___
-### Initialization
-* Same as map
-___
-## Capacity
-* **empty**
-* **size**
-* **max_size**
 ___
 ## Iterators
-* **begin**
-* **end**
-* **cbegin**
-* **cend**
-
 > * iterators are at least forward iterators - **rbegin/crbegin** and **rend/crend** - **not supported**
-___
-## Element Access
-* Same as map
 ___
 ## Element Lookup
 * **find**
@@ -38,17 +18,4 @@ ___
 * **count**
 > * Complexity
     * **Average case: linear**
-    * **Worst case: linear
-* **equal_range**
-
-___
-## Modifiers
-* **insert**
-* **erase**
-* **swap**
-* **clear** 
-* **emplace**
-* **emplace_hint**
-
-
-___
+    * **Worst case: linear**
