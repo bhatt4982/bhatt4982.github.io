@@ -93,10 +93,58 @@ ____
 
 # Priority Queue
 * **Heap** implementation - default **MAX Heap**
-## Construct
+* using **std::less** would cause the **largest** element to appear as the top() - default.
+* using **std::greater** would cause the **smallest** element to appear as the top().
+
+* template class definition
+```c++
+ template <
+  class Type,
+  class Container=vector<Type>,
+  class Compare=less<typename Container::value_type> >
+class priority_queue
+```
 * **MAX Heap**
-```c++
-````
+  ```c++
+  priority_queue<int> pq;
+  // priority_queue<int, vector<int>, less<int>> pq;
+
+  pq.push(10);
+  pq.push(1);
+  pq.push(100);
+  pq.push(75);
+
+  cout << "top() - " << pq.top() << endl;
+  // top() - 100
+  ```
 * **MIN Heap**
-```c++
-````
+  ```c++
+  priority_queue<int, vector<int>, greater<int>> pq;
+
+  pq.push(10);
+  pq.push(1);
+  pq.push(100);
+  pq.push(75);
+
+  cout << "top() - " << pq.top() << endl;
+  // top() - 1
+  ```
+* **Custom** comparator - pass it as the third parameter of priority_queue template
+  ```c++
+  struct CustomCompare{
+      bool operator()(const int& lhs, const int& rhs){
+          return lhs < rhs;
+      }
+  };
+
+  priority_queue<int, vector<int>, CustomCompare> pq;
+
+  pq.push(10);
+  pq.push(1);
+  pq.push(100);
+  pq.push(75);
+
+  cout << "top() - " << pq.top() << endl;
+  // top() - 100
+
+  ```

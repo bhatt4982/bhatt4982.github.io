@@ -5,6 +5,34 @@
 > * unlike vectors, deques are not guaranteed to store all its elements in contiguous storage locations
 > * accessing elements in a deque by offsetting a pointer to another element causes undefined behavior.
 
+
+  ```c++
+  deque <int> dq;
+  dq.push_back(10);
+  dq.push_front(20);
+  dq.push_back(30);
+  dq.push_front(15);
+  // dq - {15, 20, 10, 30}
+  showdq(dq);
+
+  cout << "dq.size() : " << dq.size() << endl;
+  cout << "dq.max_size() : " << dq.max_size() << endl;
+  // dq.size() : 4
+  // dq.max_size() :4611686018427387903
+
+  cout << "dq.at(2) : " << dq.at(2) << endl;
+  cout << "dq.front() : " << dq.front() << endl;
+  cout << "dq.back() : " << dq.back() << endl;
+  // dq.at(2) : 10
+  // dq.front() : 15
+  // dq.back() : 30
+
+  dq.pop_front();
+  // dq - {20, 10, 30}
+
+  dq.pop_back();
+  // dq - {20, 10}
+  ```
 ## Modifiers
 * **assign** - Assign container content
   ```c++
@@ -25,13 +53,3 @@
   third.assign (myints,myints+3);
   // assigning from array
   ```
-* **push_back** - Add element at the end
-* **push_front** - Insert element at beginning
-* **pop_back** - Delete last element
-* **pop_front** - Delete first element
-```c++
-```
-* **emplace_front** - Construct and insert element at beginning
-* **emplace_back** - Construct and insert element at the end
-```c++
-```
