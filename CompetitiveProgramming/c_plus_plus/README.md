@@ -6,3 +6,4 @@
   * [Deque (deck)](deck.md)
   * [Map](map.md)
   * [Unordered Map](unordered_map.md)
+  * [STL algorithm](algorithm.md)
