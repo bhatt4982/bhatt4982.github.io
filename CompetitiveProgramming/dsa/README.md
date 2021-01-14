@@ -10,9 +10,10 @@
   * Representation
   * Traversal
 
+
 * Tree
-  * Representation
-  * Traversal
+  * [Intro](tree_intro.md)
+  * [Binary Tree Traversal](tree_traversal.nd)
   * Binary Search Tree (BST)
   * Segment Tree
 
