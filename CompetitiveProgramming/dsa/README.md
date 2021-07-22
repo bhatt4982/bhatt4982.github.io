@@ -21,6 +21,10 @@
 * Linked List
   * Representation
   * Traversal
+  * Tricks
+    * Sentinel Node
+    * Hashing
+  * Skip List
 * Stack & Queue
 * Tree
   * [Intro](tree_intro.md)
@@ -46,6 +50,7 @@
   * Topological Sorting
   * Flow
 * Trie
+* Range Minimum Query (RMQ)
 * Dynamic Programming (DP)
 * Combinatories
 * Sequences

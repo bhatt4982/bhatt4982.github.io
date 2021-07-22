@@ -1,10 +1,8 @@
 # Client-Server Model
 
-* The server component provides a function or service to one or many clients, which initiate requests for such services.
+The server component provides a function or service to one or many clients, which initiate requests for such services.
 
 # ![client-server](img\client-server.png)
-
-
 
 ## Monolith Architecture
 
@@ -40,8 +38,8 @@
 ### Drawbacks
 
 * adds a complexity
-  * inter-process communication mechanism based on either messaging or RPC 
-  * code to handle partial failure 
+  * inter-process communication mechanism based on either messaging or RPC
+  * code to handle partial failure
 * difficult to implement changes that span multiple services
 * difficult to test
 * deploying a microservices-based application is also more complex
@@ -69,7 +67,7 @@
 
 ## Benefits
 
-* Horizontal Scalability
+* Scalability
 * Reliability
 * Performance
 
@@ -78,4 +76,3 @@
 * Scheduling
 * Latency
 * Observability
-
