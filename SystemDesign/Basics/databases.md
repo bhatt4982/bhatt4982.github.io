@@ -66,7 +66,7 @@
 
 ### CAP Theorem
 
-![cap_theorem](cap_theorem.png)
+![cap_theorem](img\cap_theorem.png)
 
 The **CAP theorem** states that it is impossible for a distributed data system to simultaneously provide more than two out of the following three guarantees:
 
