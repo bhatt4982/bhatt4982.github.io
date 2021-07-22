@@ -40,7 +40,7 @@
 * Redis
 * MemCache
 
-![databases](E:\git\bhatt4982.github.io\SystemDesign\Basics\img\databases.png)
+![databases](img\databases.png)
 
 ## Database Replication
 
@@ -60,13 +60,13 @@
 
 ### PIE Theorem
 
-![pie_theorem](E:\git\bhatt4982.github.io\SystemDesign\Basics\img\pie_theorem.png)
+![pie_theorem](img\pie_theorem.png)
 
 
 
 ### CAP Theorem
 
-![cap_theorem](E:\git\bhatt4982.github.io\SystemDesign\Basics\img\cap_theorem.png)
+![cap_theorem](cap_theorem.png)
 
 The **CAP theorem** states that it is impossible for a distributed data system to simultaneously provide more than two out of the following three guarantees:
 

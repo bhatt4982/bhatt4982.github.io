@@ -1,6 +1,6 @@
 # Abstract Design
 
-![abstract_design](E:\git\bhatt4982.github.io\SystemDesign\Basics\img\abstract_design.png)
+![abstract_design](img\abstract_design.png)
 
 * Right infrastructure - Load balancing, Message Queue etc.
 * Key Components
