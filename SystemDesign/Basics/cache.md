@@ -23,11 +23,13 @@
 
 
 ## Cache Eviction Policy
+* LRU
+* LFU
 * Random Replacement
 * LIFO
 * FIFO
-* LRU
 * MRU
-* LFU
 
 ## Time-to-Live (TTL)
+
+## Redis

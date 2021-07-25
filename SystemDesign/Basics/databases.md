@@ -46,15 +46,23 @@
 
 #### Master-Slave Replication
 
+![rep_master_slave](img\rep_master_slave.png)
+
 #### Master-Master Replication
+
+![rep_master_master](img\rep_master_master.png)
 
 ## Database Partition
 
 #### Federation
 
+![federation](img\federation.png)
+
 #### Sharding
 
 * Smart sharding using KV pairs
+
+![sharding](img\sharding.png)
 
 ## Choosing the right database
 
@@ -96,8 +104,16 @@ In Distributed network, partition failure is unavoidable. When a network partiti
 
 #### Consistency Patterns
 * Weak Consistency
+
 * Eventual Consistency
+
+  ![eventual_consistency](img\eventual_consistency.png)
+
 * Strong Consistency
+
+  ![consistency](img\consistency.png)
+
+  
 
 #### Availability Patterns
 * Fail-over
