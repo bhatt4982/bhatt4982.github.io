@@ -16,6 +16,8 @@
     * UPC
     * RCP
     * REST
+    * gRCP
+    * GraphQL
 1. [Network Components](network_components.md)
    * Access Control List
    * Network Gateway
@@ -52,3 +54,5 @@
 1. [Configuration Management - KV Store - Zookeeper/Etcd](configuration.md)
 1. [Continuous Integration(CI)/Continuous Deployment(CD)](ci_cd.md)
 1. [Security](security.md)
+1. [Checksum](checksum.md)
+1. [System Health - Heartbeat](heartbeat.md)

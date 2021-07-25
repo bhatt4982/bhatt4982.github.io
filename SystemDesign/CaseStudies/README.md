@@ -14,10 +14,13 @@
 1. [Designing Feeds](Generic\feeds.md)
 1. [Geospatial Design](Generic\geospatial_design.md)
 1. [DISCO - Dispatch Optimization](Generic\disco.md)
+1. [Designing a search engine](Generic\search_engine.md)
 
 ## Problems
 1. [Designing a URL Shortening Service - Tiny URL](Problems/url_shortening.md)
 1. [Designing a content sharing service - PasteBin](Problems/pastebin.md)
+1. [Designing a Auction System - eBay](Problems/auction.md)
+1. [Designing a Coupon System - GroupOn](Problems/coupon.md)
 1. [Designing Cloud Storage - DropBox/Google Drive](Problems/cloud_storage.md)
 1. [Designing Google Docs](Problems/docs.md)
 1. [Designing Twitter](Problems/twitter.md)
@@ -27,6 +30,7 @@
 1. [Designing a Cab Service - Uber or Ola](Problems/cab.md)
 1. [Designing a Food Delivery Service - Zomato or Swiggy](Problems/food_delivery.md)
 1. [Designing ticket booking - BookMyShow](Problems/ticket_booking.md)
+1. [Designing chat messengers - WhatsApp](Problems/chat_messengers.md)
 1. [Designing chat rooms - Slack](Problems/chat_rooms.md)
 1. [Designing Stock Exchange](Problems/stock_exchange.md)
 1. [Designing Task collaboration system - JIRA](Problems/task.md)
