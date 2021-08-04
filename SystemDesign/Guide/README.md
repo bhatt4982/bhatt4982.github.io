@@ -5,7 +5,7 @@
 * No Single Point-of-Failure Principle
 * No Bottle-net Principle
 
-## Guide to approach System Design
+## Guide to System Design
 
 1. [Requirement Analysis - Ask the right questions](requirement_analysis.md)
 1. [Back of the envelop estimations](capacity_estimation.md)
@@ -16,3 +16,5 @@
 1. [High Level Design - HLD](hld.md)
 1. [Design for Large Scale System](large_scale_system.md)
 1. [Deploy](deploy.md)
+
+![guide](img\guide.png)

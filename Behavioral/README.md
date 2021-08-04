@@ -6,31 +6,36 @@ Behavioral interview tries to assess your past behavior in order to predict your
 
 Behavioral Questions designed to learn how you would respond to a specific workplace situation, and how you solve problems to achieve a successful outcome.
 
-### The STAR Interview Response Method
+## Intro
+
+![intro](img\intro.png)
+
+----
+## The STAR Interview Response Method
 
 ![star_method](img\star_method.png)
 
-#### Situation
+### Situation
 
 * Set the Scene
 * Provide the context of the specific event or situation, which relates to question asked
 
-#### Task
+### Task
 
 * Describe the Purpose
 * Explain your responsibility in that situation
 
-#### Action
+### Action
 
 * Explain what you did
 * Describe how you accomplished the task
 
-#### Result
+### Result
 
 * Share the Outcome
 * Outline the impact of your actions and learnings
 
-
+----
 
 ## Tips
 

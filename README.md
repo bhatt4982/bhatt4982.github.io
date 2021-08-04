@@ -1,5 +1,10 @@
-# Techiezjunkyard
+![logo](img\logo.png)
 
-* [Behavioral Interview](Behavioral/README.md)
-* [System Design](SystemDesign/README.md)
+----
+
+
+
 * [Competitive Programming](CompetitiveProgramming/README.md)
+* [System Design](SystemDesign/README.md)
+* [Behavioral Interview](Behavioral/README.md)
+
