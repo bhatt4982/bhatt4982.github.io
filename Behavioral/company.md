@@ -2,6 +2,20 @@
 
 Focus on if you fit in the company culture.
 
+## Why you want to leave your current company?
+
+**Key Point**
+
+**Situation**
+
+**Task**
+
+**Actions**
+
+**Result**
+
+----
+
 ## Why should we hire you?
 
 **Key Point**

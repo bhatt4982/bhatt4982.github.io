@@ -156,3 +156,33 @@ Focus on you - your thought process
 
 ----
 
+## Have you anytime taken a risk during your last role?
+
+**Key Point**
+
+* Significant risk
+* Learning
+
+**Situation**
+
+**Task**
+
+**Actions**
+
+**Result**
+
+----
+
+## Have you ever worked on a project without clear requirements
+
+**Key Point**
+
+* .
+
+**Situation**
+
+**Task**
+
+**Actions**
+
+**Result**

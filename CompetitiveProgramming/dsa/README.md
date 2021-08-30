@@ -1,38 +1,59 @@
 # Data Structure & Algorithm
-* Complexity
-  * Time Complexity
-  * Space Complexity
-* Fundamentals
+
+## Fundamentals
+
+  * [Complexity](generic\complexity.md)
+    * Time Complexity
+    * Space Complexity
+  * [Data type limits](generic\data_type_limits.md)
+
+## Basics
+
   * Prime Numbers
   * Modular Arithmetic
   * BIT operations
-* Array
+
+## Array
+
   * Complete Search
   * Binary Search
   * Two Pointer Method
   * Sliding Window
-* Sort
+
+## Sort
+
   * Counting Sort
   * Quick Sort
   * Merge Sort
-* String Manipulation
+
+## String Manipulation
+
   * String Compression
-* Matrics
-* Linked List
+
+## Matrics
+
+## Linked List
+
   * Representation
   * Traversal
   * Tricks
     * Sentinel Node
     * Hashing
   * Skip List
-* Stack & Queue
-* Tree
+
+## Stack & Queue
+
+## Tree
+
   * [Intro](tree_intro.md)
   * [Binary Tree Traversal](tree_traversal.nd)
   * Binary Search Tree (BST)
   * Segment Tree
-* Heap
-* Graph
+
+## Heap or Priority Queue
+
+## Graph
+
   * Representation
   * Traversal
   * BFS
@@ -49,13 +70,23 @@
   * Lowest Common Ancestor
   * Topological Sorting
   * Flow
-* Trie
-* Range Minimum Query (RMQ)
-* Dynamic Programming (DP)
-* Combinatories
-* Sequences
-* Schedules
-* Geometry
-* Greedy Algorithm
-* Range Queries
-* Probability
+
+## Trie
+
+## Range Minimum Query (RMQ)
+
+## Dynamic Programming (DP)
+
+## Combinatories
+
+## Sequences
+
+## Schedules
+
+## Geometry
+
+## Greedy Algorithm
+
+## Range Queries
+
+## Probability
