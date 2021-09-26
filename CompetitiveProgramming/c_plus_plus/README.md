@@ -1,8 +1,11 @@
 # C++
-[Input & Output](io.md)
+- [Input & Output](io.md)
+- [Threads](thread.md)
+- [Mutex](mutex.md)
 
 ### STL
 
+  * [String](string.md)
   * [Vector](vector.md)
   * [Stack](stack.md)
   * [Queue](queue.md)

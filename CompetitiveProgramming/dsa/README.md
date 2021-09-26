@@ -15,8 +15,9 @@
 
 ## Array
 
-  * Complete Search
-  * Binary Search
+  * Search
+      * Complete Search
+      * Binary Search
   * Two Pointer Method
   * Sliding Window
 
