@@ -31,11 +31,11 @@
 
 ### Sorting
 
-1. 
+1.
 
 ### Two Pointer Method
 
-* Same Direction 
+* Same Direction
 * Opposite direction
 * Fixed Width
 
@@ -49,7 +49,7 @@
 
 ### Monotonic Queue
 
-1. [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/submissions/)
+1. [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 2. [Shortest Subarray with sum at least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/)
 3. [Longest continuous subarray with absolute diff less than or equal to limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 4. [Constrained subsequence sum](https://leetcode.com/problems/constrained-subsequence-sum/)

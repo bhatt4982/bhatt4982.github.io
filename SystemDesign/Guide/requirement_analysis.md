@@ -34,3 +34,27 @@
 
 ## Define Out-of-Scope
 * what is oblivious or less important and could be skipped in further discussion
+
+## Key Questions to answer
+
+### Users/Customers
+
+* Who will use the system?
+* How the system will be used?
+
+### Scale (Reads & Writes)
+
+* How many read queries per second?
+* How much data is queries per request?
+* Can there be any spikes in traffic?
+
+### Performance
+
+* What is expected write-to-read data delay?
+* What is expected P99 latency for read queries?
+
+### Cost
+
+* Should the design minimize the cost of development?
+* Should the design minimize the cost of Maintainance?
+
